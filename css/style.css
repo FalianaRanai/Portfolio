@@ -185,7 +185,10 @@ body{
 }
 #CVButton:hover{
     color: rgb(26, 38, 51);
-    background: rgb(207, 205, 205);
+    background: white;
+    border: solid;
+    border-width: 1px;
+    border-style: rgb(26, 38, 51);
     padding: 15px;
     height: 50px;
     border-radius: 20px;
@@ -226,4 +229,12 @@ body{
     #backToTop {
         right: 10vw;
     }
+}
+
+#frontEndButton:hover,
+#backEndButton:hover,
+#databaseButton:hover,
+#frameworkButton:hover, 
+#autresButton:hover{
+    color: rgb(201, 205, 210);
 }
