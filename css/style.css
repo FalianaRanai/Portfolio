@@ -68,21 +68,6 @@ body{
     background-color: rgba(255, 255, 255, 0.9);
     word-break: normal;
 }
-@media (min-width: 768px) {
-    .myPersonalInfosDiv{
-      max-width: 50%;
-    }
-}
-
-@media (max-width: 576px) {
-    body{
-        background: url("../assets/img/Circuit Board Mobile.svg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-}
-
 
 /* SKILLS */
 .mySkills{
@@ -204,4 +189,41 @@ body{
     padding: 15px;
     height: 50px;
     border-radius: 20px;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 10vh;
+    right: 20vw;
+    display: none;
+    color: rgb(26, 38, 51);
+    background-color: white;
+    border-color: rgb(26, 38, 51);
+    border-radius: 50px;
+    width: 4rem;
+    height: 4rem;
+    z-index: 1000;
+  }
+
+  #backToTop:hover{
+    color: white;
+    background: rgb(26, 38, 51);
+}
+
+@media (min-width: 768px) {
+    .myPersonalInfosDiv{
+      max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    body{
+        background: url("../assets/img/Circuit Board Mobile.svg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    #backToTop {
+        right: 10vw;
+    }
 }

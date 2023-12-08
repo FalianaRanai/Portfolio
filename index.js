@@ -584,3 +584,55 @@ $("#CVButton").on("click", function(){
   link.target = '_blank';
   link.click();
 });
+
+$("#myPersonalInfos").hover(function(){
+  $("#menuDesktopMyPersonalInfos").removeClass("active")
+  $("#menuDesktopMySkills").removeClass("active")
+  $("#menuDesktopMyProjects").removeClass("active")
+  $("#menuDesktopMyContacts").removeClass("active")
+  $("#menuMobileMyPersonalInfos").removeClass("active")
+  $("#menuMobileMySkills").removeClass("active")
+  $("#menuMobileMyProjects").removeClass("active")
+  $("#menuMobileMyContacts").removeClass("active")
+  $("#menuMobileMyPersonalInfos").addClass("active");
+  $("#menuDesktopMyPersonalInfos").addClass("active");
+});
+
+$("#mySkills").hover(function(){
+  $("#menuDesktopMyPersonalInfos").removeClass("active")
+  $("#menuDesktopMySkills").removeClass("active")
+  $("#menuDesktopMyProjects").removeClass("active")
+  $("#menuDesktopMyContacts").removeClass("active")
+  $("#menuMobileMyPersonalInfos").removeClass("active")
+  $("#menuMobileMySkills").removeClass("active")
+  $("#menuMobileMyProjects").removeClass("active")
+  $("#menuMobileMyContacts").removeClass("active")
+  $("#menuMobileMySkills").addClass("active");
+  $("#menuDesktopMySkills").addClass("active");
+});
+
+$("#myProjects").hover(function(){
+  $("#menuDesktopMyPersonalInfos").removeClass("active")
+  $("#menuDesktopMySkills").removeClass("active")
+  $("#menuDesktopMyProjects").removeClass("active")
+  $("#menuDesktopMyContacts").removeClass("active")
+  $("#menuMobileMyPersonalInfos").removeClass("active")
+  $("#menuMobileMySkills").removeClass("active")
+  $("#menuMobileMyProjects").removeClass("active")
+  $("#menuMobileMyContacts").removeClass("active")
+  $("#menuMobileMyProjects").addClass("active");
+  $("#menuDesktopMyProjects").addClass("active");
+});
+
+$("#myContacts").hover(function(){
+  $("#menuDesktopMyPersonalInfos").removeClass("active")
+  $("#menuDesktopMySkills").removeClass("active")
+  $("#menuDesktopMyProjects").removeClass("active")
+  $("#menuDesktopMyContacts").removeClass("active")
+  $("#menuMobileMyPersonalInfos").removeClass("active")
+  $("#menuMobileMySkills").removeClass("active")
+  $("#menuMobileMyProjects").removeClass("active")
+  $("#menuMobileMyContacts").removeClass("active")
+  $("#menuMobileMyContacts").addClass("active");
+  $("#menuDesktopMyContacts").addClass("active");
+});

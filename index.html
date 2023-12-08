@@ -196,6 +196,26 @@
       <div class="container"><small>Copyright 2023 &copy; Faliana RANAIVOSEHENO</small></div>
     </div>
 
+    
+    <button id="backToTop" class="btn btn-primary"><i class="fa-solid fa-chevron-up"></i></button>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var backToTopButton = document.getElementById('backToTop');
+  
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 200) {
+            backToTopButton.style.display = 'block';
+          } else {
+            backToTopButton.style.display = 'none';
+          }
+        });
+  
+        backToTopButton.addEventListener('click', function() {
+          window.scrollTo(0, 0);
+        });
+      });
+    </script>
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="index.js"></script>
