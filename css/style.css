@@ -76,6 +76,9 @@ body{
 @media (max-width: 576px) {
     body{
         background: url("../assets/img/Circuit Board Mobile.svg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
     }
 }
 
