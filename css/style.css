@@ -1,8 +1,8 @@
 body{
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    /* background: url("../assets/img/Circuit Board.svg"); */
+    background: url("../assets/img/Circuit Board.svg");
     /* background-size: cover; */
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
 /* NAVBAR */
@@ -68,6 +68,12 @@ body{
 @media (min-width: 768px) {
     .myPersonalInfosDiv{
       max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    body{
+        background: url("../assets/img/Circuit Board Mobile.svg");
     }
 }
 
