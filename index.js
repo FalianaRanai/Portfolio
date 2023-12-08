@@ -361,7 +361,7 @@ function addProject(projet) {
     <div class="py-2">
         <div
         id="carouselExampleDark${uniqueId}"
-        class="carousel carousel-dark slide pb-5 d-none d-md-block"
+        class="carousel carousel-dark slide pb-5"
         data-bs-ride="carousel"
         >
         <div class="carousel-inner">
