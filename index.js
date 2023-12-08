@@ -213,7 +213,7 @@ $(document).ready(() => {
       framework[3]
     ],
     titre: "Gestion de produit et fabrication",
-    description: "Ils'agit d'une petite application permettant de suivre le processus d'achat à la fabrication d'un produit incluant donc l'achat de matières premières, les mouvements de stock, les formules de fabrications et la fabrication"
+    description: "Il s'agit d'une petite application permettant de suivre le processus d'achat à la fabrication d'un produit incluant donc l'achat de matières premières, les mouvements de stock, les formules de fabrications et la fabrication"
   }
 
   let html = "";
