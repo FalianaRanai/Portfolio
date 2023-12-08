@@ -579,8 +579,8 @@ $("#bouttonLinkedInDiv").on("click", function(){
 $("#CVButton").on("click", function(){
   // console.group("Hi")
   var link = document.createElement('a');
-  link.href = "CV RANAIVOSEHENO Faliana Nirindra v3.pdf";
-  link.download = "CV RANAIVOSEHENO Faliana Nirindra v3.pdf";
+  link.href = "CV RANAIVOSEHENO Faliana Nirindra v4.pdf";
+  link.download = "CV RANAIVOSEHENO Faliana Nirindra v4.pdf";
   link.target = '_blank';
   link.click();
 });
