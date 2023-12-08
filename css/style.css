@@ -56,6 +56,7 @@ body{
     border-radius: 50%; 
     margin: auto;
     border: solid;
+    border-width: 3px;
     border-color: rgb(39, 56, 76);
 } 
 .circular--portrait img { 
@@ -164,16 +165,17 @@ body{
 }
 
 #bouttonLinkedIn{
-    background: rgb(26, 38, 51);
     padding: 15px;
     height: 50px;
     border-radius: 20px;
     transition: 0.5s;
+    color: rgb(26, 38, 51);
+    background: white;
 }
 
 #bouttonLinkedIn:hover{
-    color: rgb(26, 38, 51);
-    background: white;
+    color: white;
+    background: rgb(26, 38, 51);
     padding: 15px;
     height: 50px;
     border-radius: 20px;
