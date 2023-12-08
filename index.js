@@ -361,7 +361,7 @@ function addProject(projet) {
     <div class="py-2">
         <div
         id="carouselExampleDark${uniqueId}"
-        class="carousel carousel-dark slide pb-5"
+        class="carousel carousel-dark slide pb-5 d-none d-md-block"
         data-bs-ride="carousel"
         >
         <div class="carousel-inner">
@@ -375,7 +375,7 @@ function addProject(projet) {
                     <div class="carousel-item active" data-bs-interval="10000">
                         <img
                             src="${projet.image[i]}"
-                            class="d-block w-100"
+                            class="d-block w-100 img-responsive"
                             alt=""
                         />
                         <div class="carousel-caption d-none d-md-block"></div>
@@ -386,7 +386,7 @@ function addProject(projet) {
                     <div class="carousel-item" data-bs-interval="10000">
                         <img
                             src="${projet.image[i]}"
-                            class="d-block w-100"
+                            class="d-block w-100 img-responsive"
                             alt=""
                         />
                         <div class="carousel-caption d-none d-md-block"></div>
