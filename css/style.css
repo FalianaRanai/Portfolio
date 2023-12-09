@@ -152,18 +152,20 @@ body{
 #bouttonLinkedIn{
     padding: 15px;
     height: 50px;
-    border-radius: 20px;
+    width: 50px;
+    border-radius: 50px;
     transition: 0.5s;
-    color: rgb(26, 38, 51);
-    background: white;
+    color: white;
+    background: rgb(39, 56, 76);
+    border-color: white;
+    border: solid;
+    border-width: 2px;
 }
 
 #bouttonLinkedIn:hover{
-    color: white;
-    background: rgb(26, 38, 51);
-    padding: 15px;
-    height: 50px;
-    border-radius: 20px;
+    color: rgb(39, 56, 76);
+    background: white;
+    border-color: rgb(39, 56, 76);
 }
 
 .copyright{
