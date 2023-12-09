@@ -196,8 +196,8 @@ body{
 
 #backToTop {
     position: fixed;
-    bottom: 10vh;
-    right: 20vw;
+    bottom: 5vh;
+    right: 5vw;
     display: none;
     color: rgb(26, 38, 51);
     background-color: white;
