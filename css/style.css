@@ -1,8 +1,10 @@
 body{
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     background: url("../assets/img/Circuit Board.svg");
-    /* background-size: cover; */
-    transition: 0.5s;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* transition: 0.5s; */
 }
 
 /* NAVBAR */
@@ -54,6 +56,7 @@ body{
     border-radius: 50%; 
     margin: auto;
     border: solid;
+    border-width: 3px;
     border-color: rgb(39, 56, 76);
 } 
 .circular--portrait img { 
@@ -155,19 +158,22 @@ body{
 }
 
 #bouttonLinkedIn{
-    background: rgb(26, 38, 51);
     padding: 15px;
     height: 50px;
-    border-radius: 20px;
+    width: 50px;
+    border-radius: 50px;
     transition: 0.5s;
+    color: white;
+    background: rgb(39, 56, 76);
+    border-color: white;
+    border: solid;
+    border-width: 2px;
 }
 
 #bouttonLinkedIn:hover{
-    color: rgb(26, 38, 51);
+    color: rgb(39, 56, 76);
     background: white;
-    padding: 15px;
-    height: 50px;
-    border-radius: 20px;
+    border-color: rgb(39, 56, 76);
 }
 
 .copyright{
@@ -189,8 +195,51 @@ body{
 }
 #CVButton:hover{
     color: rgb(26, 38, 51);
-    background: rgb(207, 205, 205);
+    background: white;
+    border: solid;
+    border-width: 1px;
+    border-style: rgb(26, 38, 51);
     padding: 15px;
     height: 50px;
     border-radius: 20px;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    display: none;
+    color: rgb(26, 38, 51);
+    background-color: white;
+    border-color: rgb(26, 38, 51);
+    border-radius: 50px;
+    width: 4rem;
+    height: 4rem;
+    z-index: 1000;
+    transition: 0.3s;
+  }
+
+  #backToTop:hover{
+    color: white;
+    background: rgb(26, 38, 51);
+}
+
+@media (max-width: 576px) {
+    body{
+        background: url("../assets/img/Circuit Board Mobile.svg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    #backToTop {
+        right: 10vw;
+    }
+}
+
+#frontEndButton:hover,
+#backEndButton:hover,
+#databaseButton:hover,
+#frameworkButton:hover, 
+#autresButton:hover{
+    color: rgb(201, 205, 210);
 }

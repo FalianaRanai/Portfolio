@@ -8,15 +8,15 @@ $(document).ready(() => {
   let frontEnd = [
     {
       title: "HTML",
-      image: "assets/img/icons/HTML5_logo_and_wordmark.svg.png",
+      image: "assets/img/icons/HTML5_logo_and_wordmark.svg.webp",
     },
     {
       title: "CSS",
-      image: "assets/img/icons/CSS3_logo_and_wordmark.png",
+      image: "assets/img/icons/CSS3_logo_and_wordmark.webp",
     },
     {
       title: "Javascript",
-      image: "assets/img/icons/JavaScript-logo.png",
+      image: "assets/img/icons/JavaScript-logo.webp",
     },
     {
       title: "Bootstrap",
@@ -27,86 +27,86 @@ $(document).ready(() => {
   let backEnd = [
     {
       title: "PHP",
-      image: "assets/img/icons/php-logo.png",
+      image: "assets/img/icons/php-logo.webp",
     },
     {
       title: "NodeJs",
-      image: "assets/img/icons/node.png",
+      image: "assets/img/icons/node.webp",
     },
   ];
 
   let database = [
     {
       title: "MySQL",
-      image: "assets/img/icons/png-clipart-mysql-mysql.png",
+      image: "assets/img/icons/png-clipart-mysql-mysql.webp",
     },
     {
       title: "PostgreSQL",
       image:
-        "assets/img/icons/png-transparent-postgresql-logo-computer-software-database-open-source-s-text-head-snout.png",
+        "assets/img/icons/png-transparent-postgresql-logo-computer-software-database-open-source-s-text-head-snout.webp",
     },
     {
       title: "MongoDB",
       image:
-        "assets/img/icons/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png",
+        "assets/img/icons/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.webp",
     },
   ];
 
   let framework = [
     {
       title: "Codigniter3",
-      image: "assets/img/icons/1724795.png",
+      image: "assets/img/icons/1724795.webp",
     },
     {
       title: "ExpressJS",
-      image: "assets/img/icons/Expressjs.png",
+      image: "assets/img/icons/Expressjs.webp",
     },
     {
       title: "ReactJS",
       image:
-        "assets/img/icons/png-transparent-react-react-native-logos-brands-in-colors-icon-thumbnail.png",
+        "assets/img/icons/png-transparent-react-react-native-logos-brands-in-colors-icon-thumbnail.webp",
     },
     {
       title: "Symfony",
-      image: "assets/img/icons/symfony_black_03.png",
+      image: "assets/img/icons/symfony_black_03.webp",
     },
   ];
 
   let autres = [
     {
       title: "Git",
-      image: "assets/img/icons/Git-Logo-2Color.png",
+      image: "assets/img/icons/Git-Logo-2Color.webp",
     },
     {
       title: "jQuery",
-      image: "assets/img/icons/62a76aadbd73a4af5c5d4fc5.png",
+      image: "assets/img/icons/62a76aadbd73a4af5c5d4fc5.webp",
     },
     {
       title: "Leaflet",
-      image: "assets/img/icons/leaflet2903.logowik.png",
+      image: "assets/img/icons/leaflet2903.logowik.webp",
     },
   ];
 
   let baeloo = {
     image: [
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-33-11 Home.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-33-12 Home.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-33-13 Home.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-35-22 Login.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-36-36 Fiche Sous-Catégorie.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-37-52 Page Sous-Catégorie.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-38-10 SB Admin 2 - Login.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-39-24 Admin.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-39-40 Admin.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-39-56 Admin.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-40-04 Admin.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-40-21 Admin.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-40-37 Admin.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-40-45 Admin.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-40-59 Admin.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-41-05 Admin.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-41-19 Admin.png",
-      "assets/img/baeloo/Screenshot 2023-12-08 at 07-42-48 Admin.png",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-33-11 Home.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-33-12 Home.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-33-13 Home.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-35-22 Login.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-36-36 Fiche Sous-Catégorie.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-37-52 Page Sous-Catégorie.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-38-10 SB Admin 2 - Login.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-39-24 Admin.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-39-40 Admin.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-39-56 Admin.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-40-04 Admin.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-40-21 Admin.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-40-37 Admin.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-40-45 Admin.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-40-59 Admin.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-41-05 Admin.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-41-19 Admin.webp",
+      "assets/img/baeloo/Screenshot 2023-12-08 at 07-42-48 Admin.webp",
     ],
     technologies: [
       frontEnd[0],
@@ -127,37 +127,37 @@ $(document).ready(() => {
 
   let informationsMaritimes = {
     image: [
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-01-10 CFIM - Login Page.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-15-11 CFIM - Tableau de bord.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-15-25 CFIM - Tableau de bord.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-16-28 CFIM - Calendrier d'insertion de données.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-19-41 CFIM - Carte.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-19-58 CFIM - Carte.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-21-40 CFIM - Carte.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-22-44 CFIM - Carte.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-23-29 CFIM - Carte.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-25-28 CFIM - Carte.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-29-28 CFIM - Navire.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-29-35 CFIM - Navire.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-30-28 CFIM - Navire.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-30-37 CFIM - Navire.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-30-38 CFIM - Navire.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-33-13 CFIM - Type de Navire.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-33-24 CFIM - Type de Navire.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-33-48 CFIM - Classe de Navire.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-33-53 CFIM - Classe de Navire.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-34-04 CFIM - Mouvement de Navire.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-34-05 CFIM - Mouvement de Navire.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-34-06 CFIM - Mouvement de Navire.PNG",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-36-30 CFIM - Mouvement de Navire.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-36-45 CFIM - Mouvement de Navire.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-42-54 CFIM - Couche.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-43-01 CFIM - Couche.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-43-11 CFIM - Utilisateur.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-43-44 CFIM - Utilisateur.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-46-07 CFIM - Fiche Utilisateur.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-46-13 CFIM - Fiche Utilisateur.png",
-      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-46-21 CFIM - Fiche Utilisateur.png",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-01-10 CFIM - Login Page.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-15-11 CFIM - Tableau de bord.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-15-25 CFIM - Tableau de bord.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-16-28 CFIM - Calendrier d'insertion de données.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-19-41 CFIM - Carte.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-19-58 CFIM - Carte.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-21-40 CFIM - Carte.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-22-44 CFIM - Carte.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-23-29 CFIM - Carte.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-25-28 CFIM - Carte.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-29-28 CFIM - Navire.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-29-35 CFIM - Navire.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-30-28 CFIM - Navire.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-30-37 CFIM - Navire.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-30-38 CFIM - Navire.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-33-13 CFIM - Type de Navire.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-33-24 CFIM - Type de Navire.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-33-48 CFIM - Classe de Navire.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-33-53 CFIM - Classe de Navire.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-34-04 CFIM - Mouvement de Navire.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-34-05 CFIM - Mouvement de Navire.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-34-06 CFIM - Mouvement de Navire.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-36-30 CFIM - Mouvement de Navire.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-36-45 CFIM - Mouvement de Navire.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-42-54 CFIM - Couche.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-43-01 CFIM - Couche.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-43-11 CFIM - Utilisateur.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-43-44 CFIM - Utilisateur.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-46-07 CFIM - Fiche Utilisateur.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-46-13 CFIM - Fiche Utilisateur.webp",
+      "assets/img/informationsMaritimes/Screenshot 2023-12-08 at 09-46-21 CFIM - Fiche Utilisateur.webp",
     ],
     technologies: [
       frontEnd[0],
@@ -178,12 +178,12 @@ $(document).ready(() => {
 
   let worldData = {
     image: [
-      "assets/img/worldData/Screenshot 2023-12-08 at 10-32-28 30 Days Of JavaScript Final Projects.png",
-      "assets/img/worldData/Screenshot 2023-12-08 at 10-33-13 30 Days Of JavaScript Final Projects.png",
-      "assets/img/worldData/Screenshot 2023-12-08 at 10-33-32 30 Days Of JavaScript Final Projects.png",
-      "assets/img/worldData/Screenshot 2023-12-08 at 10-34-35 30 Days Of JavaScript Final Projects.png",
-      "assets/img/worldData/Screenshot 2023-12-08 at 10-35-29 30 Days Of JavaScript Final Projects.png",
-      "assets/img/worldData/Screenshot 2023-12-08 at 10-36-31 30 Days Of JavaScript Final Projects.png",
+      "assets/img/worldData/Screenshot 2023-12-08 at 10-32-28 30 Days Of JavaScript Final Projects.webp",
+      "assets/img/worldData/Screenshot 2023-12-08 at 10-33-13 30 Days Of JavaScript Final Projects.webp",
+      "assets/img/worldData/Screenshot 2023-12-08 at 10-33-32 30 Days Of JavaScript Final Projects.webp",
+      "assets/img/worldData/Screenshot 2023-12-08 at 10-34-35 30 Days Of JavaScript Final Projects.webp",
+      "assets/img/worldData/Screenshot 2023-12-08 at 10-35-29 30 Days Of JavaScript Final Projects.webp",
+      "assets/img/worldData/Screenshot 2023-12-08 at 10-36-31 30 Days Of JavaScript Final Projects.webp",
     ],
     technologies: [
       frontEnd[0],
@@ -198,12 +198,12 @@ $(document).ready(() => {
 
   let gestionProduit = {
     image: [
-      "assets/img/gestionProduit/Screenshot 2023-12-08 at 10-47-29 Matiere Premiere.png",
-      "assets/img/gestionProduit/Screenshot 2023-12-08 at 10-48-07 Stock matière.png",
-      "assets/img/gestionProduit/Screenshot 2023-12-08 at 10-48-19 Produit.png",
-      "assets/img/gestionProduit/Screenshot 2023-12-08 at 10-48-37 Formule.png",
-      "assets/img/gestionProduit/Screenshot 2023-12-08 at 10-49-04 Fabrication.png",
-      "assets/img/gestionProduit/Screenshot 2023-12-08 at 10-49-17 Fabrication.png",
+      "assets/img/gestionProduit/Screenshot 2023-12-08 at 10-47-29 Matiere Premiere.webp",
+      "assets/img/gestionProduit/Screenshot 2023-12-08 at 10-48-07 Stock matière.webp",
+      "assets/img/gestionProduit/Screenshot 2023-12-08 at 10-48-19 Produit.webp",
+      "assets/img/gestionProduit/Screenshot 2023-12-08 at 10-48-37 Formule.webp",
+      "assets/img/gestionProduit/Screenshot 2023-12-08 at 10-49-04 Fabrication.webp",
+      "assets/img/gestionProduit/Screenshot 2023-12-08 at 10-49-17 Fabrication.webp",
     ],
     technologies: [
       frontEnd[0],
@@ -213,7 +213,7 @@ $(document).ready(() => {
       framework[3]
     ],
     titre: "Gestion de produit et fabrication",
-    description: "Ils'agit d'une petite application permettant de suivre le processus d'achat à la fabrication d'un produit incluant donc l'achat de matières premières, les mouvements de stock, les formules de fabrications et la fabrication"
+    description: "Il s'agit d'une petite application permettant de suivre le processus d'achat à la fabrication d'un produit incluant donc l'achat de matières premières, les mouvements de stock, les formules de fabrications et la fabrication"
   }
 
   let html = "";
@@ -375,7 +375,7 @@ function addProject(projet) {
                     <div class="carousel-item active" data-bs-interval="10000">
                         <img
                             src="${projet.image[i]}"
-                            class="d-block w-100"
+                            class="d-block w-100 img-responsive"
                             alt=""
                         />
                         <div class="carousel-caption d-none d-md-block"></div>
@@ -386,7 +386,7 @@ function addProject(projet) {
                     <div class="carousel-item" data-bs-interval="10000">
                         <img
                             src="${projet.image[i]}"
-                            class="d-block w-100"
+                            class="d-block w-100 img-responsive"
                             alt=""
                         />
                         <div class="carousel-caption d-none d-md-block"></div>
@@ -579,8 +579,60 @@ $("#bouttonLinkedInDiv").on("click", function(){
 $("#CVButton").on("click", function(){
   // console.group("Hi")
   var link = document.createElement('a');
-  link.href = "CV RANAIVOSEHENO Faliana Nirindra v3.pdf";
-  link.download = "CV RANAIVOSEHENO Faliana Nirindra v3.pdf";
+  link.href = "CV RANAIVOSEHENO Faliana Nirindra v4.pdf";
+  link.download = "CV RANAIVOSEHENO Faliana Nirindra v4.pdf";
   link.target = '_blank';
   link.click();
+});
+
+$("#myPersonalInfos").hover(function(){
+  $("#menuDesktopMyPersonalInfos").removeClass("active")
+  $("#menuDesktopMySkills").removeClass("active")
+  $("#menuDesktopMyProjects").removeClass("active")
+  $("#menuDesktopMyContacts").removeClass("active")
+  $("#menuMobileMyPersonalInfos").removeClass("active")
+  $("#menuMobileMySkills").removeClass("active")
+  $("#menuMobileMyProjects").removeClass("active")
+  $("#menuMobileMyContacts").removeClass("active")
+  $("#menuMobileMyPersonalInfos").addClass("active");
+  $("#menuDesktopMyPersonalInfos").addClass("active");
+});
+
+$("#mySkills").hover(function(){
+  $("#menuDesktopMyPersonalInfos").removeClass("active")
+  $("#menuDesktopMySkills").removeClass("active")
+  $("#menuDesktopMyProjects").removeClass("active")
+  $("#menuDesktopMyContacts").removeClass("active")
+  $("#menuMobileMyPersonalInfos").removeClass("active")
+  $("#menuMobileMySkills").removeClass("active")
+  $("#menuMobileMyProjects").removeClass("active")
+  $("#menuMobileMyContacts").removeClass("active")
+  $("#menuMobileMySkills").addClass("active");
+  $("#menuDesktopMySkills").addClass("active");
+});
+
+$("#myProjects").hover(function(){
+  $("#menuDesktopMyPersonalInfos").removeClass("active")
+  $("#menuDesktopMySkills").removeClass("active")
+  $("#menuDesktopMyProjects").removeClass("active")
+  $("#menuDesktopMyContacts").removeClass("active")
+  $("#menuMobileMyPersonalInfos").removeClass("active")
+  $("#menuMobileMySkills").removeClass("active")
+  $("#menuMobileMyProjects").removeClass("active")
+  $("#menuMobileMyContacts").removeClass("active")
+  $("#menuMobileMyProjects").addClass("active");
+  $("#menuDesktopMyProjects").addClass("active");
+});
+
+$("#myContacts").hover(function(){
+  $("#menuDesktopMyPersonalInfos").removeClass("active")
+  $("#menuDesktopMySkills").removeClass("active")
+  $("#menuDesktopMyProjects").removeClass("active")
+  $("#menuDesktopMyContacts").removeClass("active")
+  $("#menuMobileMyPersonalInfos").removeClass("active")
+  $("#menuMobileMySkills").removeClass("active")
+  $("#menuMobileMyProjects").removeClass("active")
+  $("#menuMobileMyContacts").removeClass("active")
+  $("#menuMobileMyContacts").addClass("active");
+  $("#menuDesktopMyContacts").addClass("active");
 });
