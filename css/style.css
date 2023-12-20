@@ -68,12 +68,6 @@ body{
     background-color: rgba(255, 255, 255, 0.9);
     word-break: normal;
 }
-@media (min-width: 768px) {
-    .myPersonalInfosDiv{
-      /* max-width: 80%; */
-    }
-}
-
 
 /* SKILLS */
 .mySkills{
@@ -192,6 +186,7 @@ body{
     border-radius: 20px;
     transition: 0.5s;
     color: white;
+    max-width: 50vw;
 }
 #CVButton:hover{
     color: rgb(26, 38, 51);
@@ -234,6 +229,14 @@ body{
     #backToTop {
         right: 10vw;
     }
+}
+
+#frontEndButton,
+#backEndButton,
+#databaseButton,
+#frameworkButton, 
+#autresButton{
+    text-transform: lowercase;
 }
 
 #frontEndButton:hover,

@@ -321,7 +321,7 @@ $(document).ready(() => {
 function addSkills(title, elementId, skills) {
   let html = `
             <div>
-                <p role="button" class="fs-1 w-100" id="${elementId}Button">
+                <p role="button" class="fs-3 w-100" id="${elementId}Button">
                     ${title} <i class="fa fa-chevron-down"></i>
                 </p>
                 <div class="row d-flex justify-content-center" id="${elementId}">
@@ -425,7 +425,7 @@ function addProject(projet) {
         </button>
         </div>
 
-        <p class="fs-1">${projet.titre}</p>
+        <p class="fs-3">${projet.titre}</p>
         <p class="fs-4">Technologies:</p>
 
         <div class="d-flex w-100 align-items-center flex-wrap gap-3">
