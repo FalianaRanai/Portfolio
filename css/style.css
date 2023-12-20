@@ -44,7 +44,7 @@ body{
     text-transform: uppercase !important;
     font-weight: 700 !important;
     letter-spacing: 3px;
-    height: 100vh;
+    min-height: 100vh;
     color: rgb(39, 56, 76) !important;
 }
 
@@ -68,6 +68,12 @@ body{
     background-color: rgba(255, 255, 255, 0.9);
     word-break: normal;
 }
+@media (min-width: 768px) {
+    .myPersonalInfosDiv{
+      /* max-width: 80%; */
+    }
+}
+
 
 /* SKILLS */
 .mySkills{
@@ -117,7 +123,9 @@ body{
 #database,
 #framework, 
 #autres{
-    transition: 0.7s; max-height: 0px; overflow: auto;
+    transition: max-height 1s ease; 
+    max-height: 0px; 
+    overflow: hidden;
 }
 
 /* PROJETS */
@@ -208,17 +216,12 @@ body{
     width: 4rem;
     height: 4rem;
     z-index: 1000;
+    transition: 0.3s;
   }
 
   #backToTop:hover{
     color: white;
     background: rgb(26, 38, 51);
-}
-
-@media (min-width: 768px) {
-    .myPersonalInfosDiv{
-      max-width: 50%;
-    }
 }
 
 @media (max-width: 576px) {
