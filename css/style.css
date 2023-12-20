@@ -67,7 +67,7 @@ body{
 }
 @media (min-width: 768px) {
     .myPersonalInfosDiv{
-      max-width: 50%;
+      /* max-width: 80%; */
     }
 }
 
@@ -120,7 +120,9 @@ body{
 #database,
 #framework, 
 #autres{
-    transition: 1s; max-height: 0px; overflow: auto;
+    transition: max-height 1s ease; 
+    max-height: 0px; 
+    overflow: hidden;
 }
 
 /* PROJETS */

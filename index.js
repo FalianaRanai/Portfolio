@@ -237,7 +237,7 @@ $(document).ready(() => {
     let element = $("#frontEnd");
     // console.log(element.css("max-height"));
     if (element.css("max-height") == "0px") {
-      element.css("max-height", "100vh");
+      element.css("max-height", "1000vh");
       $("#frontEndButton").html(`
               Front-end <i class="fa fa-chevron-up"></i>
           `);
@@ -254,7 +254,7 @@ $(document).ready(() => {
     let element = $("#backEnd");
     // console.log(element.css("max-height"));
     if (element.css("max-height") == "0px") {
-      element.css("max-height", "100vh");
+      element.css("max-height", "1000vh");
       $("#backEndButton").html(`
               Back-end <i class="fa fa-chevron-up"></i>
           `);
@@ -271,7 +271,7 @@ $(document).ready(() => {
     let element = $("#database");
     // console.log(element.css("max-height"));
     if (element.css("max-height") == "0px") {
-      element.css("max-height", "100vh");
+      element.css("max-height", "1000vh");
       $("#databaseButton").html(`
               Base de données <i class="fa fa-chevron-up"></i>
           `);
@@ -288,7 +288,7 @@ $(document).ready(() => {
     let element = $("#framework");
     // console.log(element.css("max-height"));
     if (element.css("max-height") == "0px") {
-      element.css("max-height", "100vh");
+      element.css("max-height", "1000vh");
       $("#frameworkButton").html(`
               Framework <i class="fa fa-chevron-up"></i>
           `);
@@ -305,7 +305,7 @@ $(document).ready(() => {
     let element = $("#autres");
     // console.log(element.css("max-height"));
     if (element.css("max-height") == "0px") {
-      element.css("max-height", "100vh");
+      element.css("max-height", "1000vh");
       $("#autresButton").html(`
               Autres <i class="fa fa-chevron-up"></i>
           `);
