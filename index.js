@@ -18,6 +18,11 @@ $(document).ready(() => {
       image: "assets/img/icons/JavaScript-logo.webp",
     },
     {
+      title: "ReactJS",
+      image:
+        "assets/img/icons/png-transparent-react-react-native-logos-brands-in-colors-icon-thumbnail.webp",
+    },
+    {
       title: "Bootstrap",
       image: "assets/img/icons/bootstrap-5-logo-icon.webp",
     },
@@ -31,6 +36,10 @@ $(document).ready(() => {
     {
       title: "NodeJs",
       image: "assets/img/icons/node.webp",
+    },
+    {
+      title: "ExpressJS",
+      image: "assets/img/icons/Expressjs.webp",
     },
   ];
 
@@ -55,15 +64,6 @@ $(document).ready(() => {
     {
       title: "Codigniter3",
       image: "assets/img/icons/1724795.webp",
-    },
-    {
-      title: "ExpressJS",
-      image: "assets/img/icons/Expressjs.webp",
-    },
-    {
-      title: "ReactJS",
-      image:
-        "assets/img/icons/png-transparent-react-react-native-logos-brands-in-colors-icon-thumbnail.webp",
     },
     {
       title: "Symfony",
@@ -111,10 +111,10 @@ $(document).ready(() => {
       frontEnd[0],
       frontEnd[1],
       frontEnd[2],
-      frontEnd[3],
+      frontEnd[4],
       database[2],
-      framework[1],
-      framework[2],
+      backEnd[2],
+      frontEnd[3],
       backEnd[1],
     ],
     titre: "Baeloo - Site de référencement",
@@ -162,7 +162,7 @@ $(document).ready(() => {
       frontEnd[0],
       frontEnd[1],
       frontEnd[2],
-      frontEnd[3],
+      frontEnd[4],
       backEnd[0],
       database[0],
       framework[0],
@@ -188,7 +188,7 @@ $(document).ready(() => {
       frontEnd[0],
       frontEnd[1],
       frontEnd[2],
-      frontEnd[3],
+      frontEnd[4],
       autres[1],
     ],
     titre: "Projet de filtrage d'informations",
@@ -210,7 +210,7 @@ $(document).ready(() => {
       frontEnd[1],
       backEnd[0],
       database[0],
-      framework[3],
+      framework[1],
     ],
     titre: "Gestion de produit et fabrication",
     description:
