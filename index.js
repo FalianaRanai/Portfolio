@@ -1,8 +1,7 @@
 $(document).ready(() => {
-
-  $('.navbar-nav .nav-link').on('click', function() {
+  $(".navbar-nav .nav-link").on("click", function () {
     // Fermer le menu
-    $('.navbar-collapse').collapse('hide');
+    $(".navbar-collapse").collapse("hide");
   });
 
   let frontEnd = [
@@ -171,7 +170,7 @@ $(document).ready(() => {
       autres[2],
     ],
     titre:
-      "Suivi du traffic maritimes dansla Zone Economique Exclusive de Madagascar (ZEE)",
+      "Suivi du traffic maritimes dans la Zone Economique Exclusive de Madagascar (ZEE)",
     description:
       "Cette plateforme permet aux utilisateurs de faire un suivi du traffic de navires dans les zones maritimes de Madagascar. Il permet en soi d'importer les données issues des plateformes satellitaires exactEarth et SeaVision, d'importer les couches aux alentours du pays, de filter les données de navires selon différents critère, d'avoir un visuel des trajets et de gérer les utilisateurs",
   };
@@ -193,8 +192,9 @@ $(document).ready(() => {
       autres[1],
     ],
     titre: "Projet de filtrage d'informations",
-    description: "Il s'agit d'un projet permettant der filtrer les données des pays du monde selon le nom, la capital et la population en utilisant une API en ligne"
-  }
+    description:
+      "Il s'agit d'un projet permettant der filtrer les données des pays du monde selon le nom, la capital et la population en utilisant une API en ligne",
+  };
 
   let gestionProduit = {
     image: [
@@ -210,11 +210,12 @@ $(document).ready(() => {
       frontEnd[1],
       backEnd[0],
       database[0],
-      framework[3]
+      framework[3],
     ],
     titre: "Gestion de produit et fabrication",
-    description: "Il s'agit d'une petite application permettant de suivre le processus d'achat à la fabrication d'un produit incluant donc l'achat de matières premières, les mouvements de stock, les formules de fabrications et la fabrication"
-  }
+    description:
+      "Il s'agit d'une petite application permettant de suivre le processus d'achat à la fabrication d'un produit incluant donc l'achat de matières premières, les mouvements de stock, les formules de fabrications et la fabrication",
+  };
 
   let html = "";
   html += addSkills("Front-end", "frontEnd", frontEnd);
@@ -234,129 +235,130 @@ $(document).ready(() => {
 
   $("#frontEndButton").on("click", async () => {
     let html = "";
-    let element = $("#frontEnd");
-    // console.log(element.css("max-height"));
-    if (element.css("max-height") == "0px") {
-      element.css("max-height", "100vh");
-      $("#frontEndButton").html(`
-              Front-end <i class="fa fa-chevron-up"></i>
-          `);
+    let element = $("#frontEndButton");
+    if (element.hasClass("collapsed")) {
+      element.html(`Front-end <i class="fa fa-chevron-down"></i>`);
     } else {
-      element.css("max-height", "0px");
-      $("#frontEndButton").html(`
-              Front-end <i class="fa fa-chevron-down"></i>
-          `);
+      element.html(`Front-end <i class="fa fa-chevron-up"></i>`);
     }
   });
 
   $("#backEndButton").on("click", async () => {
     let html = "";
-    let element = $("#backEnd");
-    // console.log(element.css("max-height"));
-    if (element.css("max-height") == "0px") {
-      element.css("max-height", "100vh");
-      $("#backEndButton").html(`
-              Back-end <i class="fa fa-chevron-up"></i>
-          `);
+    let element = $("#backEndButton");
+    if (element.hasClass("collapsed")) {
+      element.html(`Back-end <i class="fa fa-chevron-down"></i>`);
     } else {
-      element.css("max-height", "0px");
-      $("#backEndButton").html(`
-              Back-end <i class="fa fa-chevron-down"></i>
-          `);
+      element.html(`Back-end <i class="fa fa-chevron-up"></i>`);
     }
   });
 
   $("#databaseButton").on("click", async () => {
     let html = "";
-    let element = $("#database");
-    // console.log(element.css("max-height"));
-    if (element.css("max-height") == "0px") {
-      element.css("max-height", "100vh");
-      $("#databaseButton").html(`
-              Base de données <i class="fa fa-chevron-up"></i>
-          `);
+    let element = $("#databaseButton");
+    if (element.hasClass("collapsed")) {
+      element.html(`Base de données <i class="fa fa-chevron-down"></i>`);
     } else {
-      element.css("max-height", "0px");
-      $("#databaseButton").html(`
-              Base de données <i class="fa fa-chevron-down"></i>
-          `);
+      element.html(`Base de données <i class="fa fa-chevron-up"></i>`);
     }
   });
 
   $("#frameworkButton").on("click", async () => {
     let html = "";
-    let element = $("#framework");
-    // console.log(element.css("max-height"));
-    if (element.css("max-height") == "0px") {
-      element.css("max-height", "100vh");
-      $("#frameworkButton").html(`
-              Framework <i class="fa fa-chevron-up"></i>
-          `);
+    let element = $("#frameworkButton");
+    if (element.hasClass("collapsed")) {
+      element.html(`Framework <i class="fa fa-chevron-down"></i>`);
     } else {
-      element.css("max-height", "0px");
-      $("#frameworkButton").html(`
-              Framework <i class="fa fa-chevron-down"></i>
-          `);
+      element.html(`Framework <i class="fa fa-chevron-up"></i>`);
     }
   });
 
   $("#autresButton").on("click", async () => {
     let html = "";
-    let element = $("#autres");
-    // console.log(element.css("max-height"));
-    if (element.css("max-height") == "0px") {
-      element.css("max-height", "100vh");
-      $("#autresButton").html(`
-              Autres <i class="fa fa-chevron-up"></i>
-          `);
+    let element = $("#autresButton");
+    if (element.hasClass("collapsed")) {
+      element.html(`Autres <i class="fa fa-chevron-down"></i>`);
     } else {
-      element.css("max-height", "0px");
-      $("#autresButton").html(`
-              Autres <i class="fa fa-chevron-down"></i>
-          `);
+      element.html(`Autres <i class="fa fa-chevron-up"></i>`);
     }
   });
 });
 
 function addSkills(title, elementId, skills) {
-  let html = `
-            <div>
-                <p role="button" class="fs-1 w-100" id="${elementId}Button">
-                    ${title} <i class="fa fa-chevron-down"></i>
-                </p>
-                <div class="row d-flex justify-content-center" id="${elementId}">
-                <div class="col-md-6">
-                    <div
-                    class="d-flex justify-content-around gap-3 bg-white p-5 m-5 flex-wrap shadow p-3 mb-5 rounded"
-                    >
-        `;
-  let element = $(`#${elementId}`);
+  let accordionBody = ``;
   for (let i = 0; i < skills.length; i++) {
-    html += `
-            <div class="text-center">
-                <p>
-                    <img
-                    src="${skills[i].image}"
-                    alt=""
-                    style="max-height: 100px; max-width: 100%;"
-                    />
-                </p>
-                <p class="fs-4" style="color: black">${skills[i].title}</p>
-            </div>`;
+    accordionBody += `
+      <div class="text-center">
+          <p>
+              <img
+              src="${skills[i].image}"
+              alt=""
+              style="max-height: 100px; max-width: 100%;"
+              />
+          </p>
+          <p class="fs-4" style="color: black">${skills[i].title}</p>
+      </div>
+    `;
   }
-  html += `
+
+  let html = `<div class="container">
+  <div class="accordion" id="accordionExample">
+  <div class="accordion-item border-0">
+
+  <div style="background: rgb(39, 56, 76) !important">
+      <p role="button" id="${elementId}Button" class="fs-3 w-100 m-0 py-2" data-bs-toggle="collapse" data-bs-target="#collapse${elementId}" aria-expanded="true" aria-controls="collapse${elementId}">
+          ${title} <i class="fa fa-chevron-down"></i>
+      </p>
+  </div>
+  
+    
+
+    <div id="collapse${elementId}" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <div class="d-flex justify-content-around gap-3 p-5 m-5 flex-wrap mb-5 rounded">
+        ${accordionBody}
         </div>
       </div>
-     </div> 
-      `;
+    </div>
+  </div>
+  </div>
+`;
+  //           <div>
+  //               <p role="button" class="fs-3 w-100" id="${elementId}Button">
+  //                   ${title} <i class="fa fa-chevron-down"></i>
+  //               </p>
+  //               <div class="row d-flex justify-content-center" id="${elementId}">
+  //               <div class="col-md-6">
+  //                   <div
+  //                   class="d-flex justify-content-around gap-3 bg-white p-5 m-5 flex-wrap shadow p-3 mb-5 rounded"
+  //                   >
+  //       `;
+  // let element = $(`#${elementId}`);
+  // for (let i = 0; i < skills.length; i++) {
+  //   html += `
+  //           <div class="text-center">
+  //               <p>
+  //                   <img
+  //                   src="${skills[i].image}"
+  //                   alt=""
+  //                   style="max-height: 100px; max-width: 100%;"
+  //                   />
+  //               </p>
+  //               <p class="fs-4" style="color: black">${skills[i].title}</p>
+  //           </div>`;
+  // }
+  // html += `
+  //       </div>
+  //     </div>
+  //    </div>
+  //     `;
   return html;
 }
 
 function addProject(projet) {
-
   var uniqueId = generateUniqueId();
   // console.log(uniqueId);
-  
+
   let html = `
     <div class="py-2">
         <div
@@ -425,7 +427,7 @@ function addProject(projet) {
         </button>
         </div>
 
-        <p class="fs-1">${projet.titre}</p>
+        <p class="fs-3">${projet.titre}</p>
         <p class="fs-4">Technologies:</p>
 
         <div class="d-flex w-100 align-items-center flex-wrap gap-3">
@@ -466,173 +468,175 @@ function generateUniqueId() {
   return timestamp + randomNum;
 }
 
-$("#menuDesktopMyPersonalInfos").on("click", function(){
-  $("#menuDesktopMyPersonalInfos").removeClass("active")
-  $("#menuDesktopMySkills").removeClass("active")
-  $("#menuDesktopMyProjects").removeClass("active")
-  $("#menuDesktopMyContacts").removeClass("active")
-  $("#menuMobileMyPersonalInfos").removeClass("active")
-  $("#menuMobileMySkills").removeClass("active")
-  $("#menuMobileMyProjects").removeClass("active")
-  $("#menuMobileMyContacts").removeClass("active")
+$("#menuDesktopMyPersonalInfos").on("click", function () {
+  $("#menuDesktopMyPersonalInfos").removeClass("active");
+  $("#menuDesktopMySkills").removeClass("active");
+  $("#menuDesktopMyProjects").removeClass("active");
+  $("#menuDesktopMyContacts").removeClass("active");
+  $("#menuMobileMyPersonalInfos").removeClass("active");
+  $("#menuMobileMySkills").removeClass("active");
+  $("#menuMobileMyProjects").removeClass("active");
+  $("#menuMobileMyContacts").removeClass("active");
   $(this).addClass("active");
   $("#menuMobileMyPersonalInfos").addClass("active");
 });
 
-$("#menuDesktopMySkills").on("click", function(){
-  $("#menuDesktopMyPersonalInfos").removeClass("active")
-  $("#menuDesktopMySkills").removeClass("active")
-  $("#menuDesktopMyProjects").removeClass("active")
-  $("#menuDesktopMyContacts").removeClass("active")
-  $("#menuMobileMyPersonalInfos").removeClass("active")
-  $("#menuMobileMySkills").removeClass("active")
-  $("#menuMobileMyProjects").removeClass("active")
-  $("#menuMobileMyContacts").removeClass("active")
+$("#menuDesktopMySkills").on("click", function () {
+  $("#menuDesktopMyPersonalInfos").removeClass("active");
+  $("#menuDesktopMySkills").removeClass("active");
+  $("#menuDesktopMyProjects").removeClass("active");
+  $("#menuDesktopMyContacts").removeClass("active");
+  $("#menuMobileMyPersonalInfos").removeClass("active");
+  $("#menuMobileMySkills").removeClass("active");
+  $("#menuMobileMyProjects").removeClass("active");
+  $("#menuMobileMyContacts").removeClass("active");
   $(this).addClass("active");
   $("#menuMobileMySkills").addClass("active");
 });
 
-$("#menuDesktopMyProjects").on("click", function(){
-  $("#menuDesktopMyPersonalInfos").removeClass("active")
-  $("#menuDesktopMySkills").removeClass("active")
-  $("#menuDesktopMyProjects").removeClass("active")
-  $("#menuDesktopMyContacts").removeClass("active")
-  $("#menuMobileMyPersonalInfos").removeClass("active")
-  $("#menuMobileMySkills").removeClass("active")
-  $("#menuMobileMyProjects").removeClass("active")
-  $("#menuMobileMyContacts").removeClass("active")
+$("#menuDesktopMyProjects").on("click", function () {
+  $("#menuDesktopMyPersonalInfos").removeClass("active");
+  $("#menuDesktopMySkills").removeClass("active");
+  $("#menuDesktopMyProjects").removeClass("active");
+  $("#menuDesktopMyContacts").removeClass("active");
+  $("#menuMobileMyPersonalInfos").removeClass("active");
+  $("#menuMobileMySkills").removeClass("active");
+  $("#menuMobileMyProjects").removeClass("active");
+  $("#menuMobileMyContacts").removeClass("active");
   $(this).addClass("active");
   $("#menuMobileMyProjects").addClass("active");
 });
 
-$("#menuDesktopMyContacts").on("click", function(){
-  $("#menuDesktopMyPersonalInfos").removeClass("active")
-  $("#menuDesktopMySkills").removeClass("active")
-  $("#menuDesktopMyProjects").removeClass("active")
-  $("#menuDesktopMyContacts").removeClass("active")
-  $("#menuMobileMyPersonalInfos").removeClass("active")
-  $("#menuMobileMySkills").removeClass("active")
-  $("#menuMobileMyProjects").removeClass("active")
-  $("#menuMobileMyContacts").removeClass("active")
+$("#menuDesktopMyContacts").on("click", function () {
+  $("#menuDesktopMyPersonalInfos").removeClass("active");
+  $("#menuDesktopMySkills").removeClass("active");
+  $("#menuDesktopMyProjects").removeClass("active");
+  $("#menuDesktopMyContacts").removeClass("active");
+  $("#menuMobileMyPersonalInfos").removeClass("active");
+  $("#menuMobileMySkills").removeClass("active");
+  $("#menuMobileMyProjects").removeClass("active");
+  $("#menuMobileMyContacts").removeClass("active");
   $(this).addClass("active");
   $("#menuMobileMyContacts").addClass("active");
 });
 
-
-$("#menuMobileMyPersonalInfos").on("click", function(){
-  $("#menuDesktopMyPersonalInfos").removeClass("active")
-  $("#menuDesktopMySkills").removeClass("active")
-  $("#menuDesktopMyProjects").removeClass("active")
-  $("#menuDesktopMyContacts").removeClass("active")
-  $("#menuMobileMyPersonalInfos").removeClass("active")
-  $("#menuMobileMySkills").removeClass("active")
-  $("#menuMobileMyProjects").removeClass("active")
-  $("#menuMobileMyContacts").removeClass("active")
+$("#menuMobileMyPersonalInfos").on("click", function () {
+  $("#menuDesktopMyPersonalInfos").removeClass("active");
+  $("#menuDesktopMySkills").removeClass("active");
+  $("#menuDesktopMyProjects").removeClass("active");
+  $("#menuDesktopMyContacts").removeClass("active");
+  $("#menuMobileMyPersonalInfos").removeClass("active");
+  $("#menuMobileMySkills").removeClass("active");
+  $("#menuMobileMyProjects").removeClass("active");
+  $("#menuMobileMyContacts").removeClass("active");
   $(this).addClass("active");
   $("#menuDesktopMyPersonalInfos").addClass("active");
 });
 
-$("#menuMobileMySkills").on("click", function(){
-  $("#menuDesktopMyPersonalInfos").removeClass("active")
-  $("#menuDesktopMySkills").removeClass("active")
-  $("#menuDesktopMyProjects").removeClass("active")
-  $("#menuDesktopMyContacts").removeClass("active")
-  $("#menuMobileMyPersonalInfos").removeClass("active")
-  $("#menuMobileMySkills").removeClass("active")
-  $("#menuMobileMyProjects").removeClass("active")
-  $("#menuMobileMyContacts").removeClass("active")
+$("#menuMobileMySkills").on("click", function () {
+  $("#menuDesktopMyPersonalInfos").removeClass("active");
+  $("#menuDesktopMySkills").removeClass("active");
+  $("#menuDesktopMyProjects").removeClass("active");
+  $("#menuDesktopMyContacts").removeClass("active");
+  $("#menuMobileMyPersonalInfos").removeClass("active");
+  $("#menuMobileMySkills").removeClass("active");
+  $("#menuMobileMyProjects").removeClass("active");
+  $("#menuMobileMyContacts").removeClass("active");
   $(this).addClass("active");
   $("#menuDesktopMySkills").addClass("active");
 });
 
-$("#menuMobileMyProjects").on("click", function(){
-  $("#menuDesktopMyPersonalInfos").removeClass("active")
-  $("#menuDesktopMySkills").removeClass("active")
-  $("#menuDesktopMyProjects").removeClass("active")
-  $("#menuDesktopMyContacts").removeClass("active")
-  $("#menuMobileMyPersonalInfos").removeClass("active")
-  $("#menuMobileMySkills").removeClass("active")
-  $("#menuMobileMyProjects").removeClass("active")
-  $("#menuMobileMyContacts").removeClass("active")
+$("#menuMobileMyProjects").on("click", function () {
+  $("#menuDesktopMyPersonalInfos").removeClass("active");
+  $("#menuDesktopMySkills").removeClass("active");
+  $("#menuDesktopMyProjects").removeClass("active");
+  $("#menuDesktopMyContacts").removeClass("active");
+  $("#menuMobileMyPersonalInfos").removeClass("active");
+  $("#menuMobileMySkills").removeClass("active");
+  $("#menuMobileMyProjects").removeClass("active");
+  $("#menuMobileMyContacts").removeClass("active");
   $(this).addClass("active");
   $("#menuDesktopMyProjects").addClass("active");
 });
 
-$("#menuMobileMyContacts").on("click", function(){
-  $("#menuDesktopMyPersonalInfos").removeClass("active")
-  $("#menuDesktopMySkills").removeClass("active")
-  $("#menuDesktopMyProjects").removeClass("active")
-  $("#menuDesktopMyContacts").removeClass("active")
-  $("#menuMobileMyPersonalInfos").removeClass("active")
-  $("#menuMobileMySkills").removeClass("active")
-  $("#menuMobileMyProjects").removeClass("active")
-  $("#menuMobileMyContacts").removeClass("active")
+$("#menuMobileMyContacts").on("click", function () {
+  $("#menuDesktopMyPersonalInfos").removeClass("active");
+  $("#menuDesktopMySkills").removeClass("active");
+  $("#menuDesktopMyProjects").removeClass("active");
+  $("#menuDesktopMyContacts").removeClass("active");
+  $("#menuMobileMyPersonalInfos").removeClass("active");
+  $("#menuMobileMySkills").removeClass("active");
+  $("#menuMobileMyProjects").removeClass("active");
+  $("#menuMobileMyContacts").removeClass("active");
   $(this).addClass("active");
   $("#menuDesktopMyContacts").addClass("active");
 });
 
-$("#bouttonLinkedInDiv").on("click", function(){
+$("#bouttonLinkedInDiv").on("click", function () {
   // console.group("Hi")
-  window.open("https://www.linkedin.com/in/faliana-ranaivoseheno-45488425b/", '_blank');
+  window.open(
+    "https://www.linkedin.com/in/faliana-ranaivoseheno-45488425b/",
+    "_blank"
+  );
 });
 
-$("#CVButton").on("click", function(){
+$("#CVButton").on("click", function () {
   // console.group("Hi")
-  var link = document.createElement('a');
+  var link = document.createElement("a");
   link.href = "CV RANAIVOSEHENO Faliana Nirindra v4.pdf";
   link.download = "CV RANAIVOSEHENO Faliana Nirindra v4.pdf";
-  link.target = '_blank';
+  link.target = "_blank";
   link.click();
 });
 
-$("#myPersonalInfos").hover(function(){
-  $("#menuDesktopMyPersonalInfos").removeClass("active")
-  $("#menuDesktopMySkills").removeClass("active")
-  $("#menuDesktopMyProjects").removeClass("active")
-  $("#menuDesktopMyContacts").removeClass("active")
-  $("#menuMobileMyPersonalInfos").removeClass("active")
-  $("#menuMobileMySkills").removeClass("active")
-  $("#menuMobileMyProjects").removeClass("active")
-  $("#menuMobileMyContacts").removeClass("active")
+$("#myPersonalInfos").hover(function () {
+  $("#menuDesktopMyPersonalInfos").removeClass("active");
+  $("#menuDesktopMySkills").removeClass("active");
+  $("#menuDesktopMyProjects").removeClass("active");
+  $("#menuDesktopMyContacts").removeClass("active");
+  $("#menuMobileMyPersonalInfos").removeClass("active");
+  $("#menuMobileMySkills").removeClass("active");
+  $("#menuMobileMyProjects").removeClass("active");
+  $("#menuMobileMyContacts").removeClass("active");
   $("#menuMobileMyPersonalInfos").addClass("active");
   $("#menuDesktopMyPersonalInfos").addClass("active");
 });
 
-$("#mySkills").hover(function(){
-  $("#menuDesktopMyPersonalInfos").removeClass("active")
-  $("#menuDesktopMySkills").removeClass("active")
-  $("#menuDesktopMyProjects").removeClass("active")
-  $("#menuDesktopMyContacts").removeClass("active")
-  $("#menuMobileMyPersonalInfos").removeClass("active")
-  $("#menuMobileMySkills").removeClass("active")
-  $("#menuMobileMyProjects").removeClass("active")
-  $("#menuMobileMyContacts").removeClass("active")
+$("#mySkills").hover(function () {
+  $("#menuDesktopMyPersonalInfos").removeClass("active");
+  $("#menuDesktopMySkills").removeClass("active");
+  $("#menuDesktopMyProjects").removeClass("active");
+  $("#menuDesktopMyContacts").removeClass("active");
+  $("#menuMobileMyPersonalInfos").removeClass("active");
+  $("#menuMobileMySkills").removeClass("active");
+  $("#menuMobileMyProjects").removeClass("active");
+  $("#menuMobileMyContacts").removeClass("active");
   $("#menuMobileMySkills").addClass("active");
   $("#menuDesktopMySkills").addClass("active");
 });
 
-$("#myProjects").hover(function(){
-  $("#menuDesktopMyPersonalInfos").removeClass("active")
-  $("#menuDesktopMySkills").removeClass("active")
-  $("#menuDesktopMyProjects").removeClass("active")
-  $("#menuDesktopMyContacts").removeClass("active")
-  $("#menuMobileMyPersonalInfos").removeClass("active")
-  $("#menuMobileMySkills").removeClass("active")
-  $("#menuMobileMyProjects").removeClass("active")
-  $("#menuMobileMyContacts").removeClass("active")
+$("#myProjects").hover(function () {
+  $("#menuDesktopMyPersonalInfos").removeClass("active");
+  $("#menuDesktopMySkills").removeClass("active");
+  $("#menuDesktopMyProjects").removeClass("active");
+  $("#menuDesktopMyContacts").removeClass("active");
+  $("#menuMobileMyPersonalInfos").removeClass("active");
+  $("#menuMobileMySkills").removeClass("active");
+  $("#menuMobileMyProjects").removeClass("active");
+  $("#menuMobileMyContacts").removeClass("active");
   $("#menuMobileMyProjects").addClass("active");
   $("#menuDesktopMyProjects").addClass("active");
 });
 
-$("#myContacts").hover(function(){
-  $("#menuDesktopMyPersonalInfos").removeClass("active")
-  $("#menuDesktopMySkills").removeClass("active")
-  $("#menuDesktopMyProjects").removeClass("active")
-  $("#menuDesktopMyContacts").removeClass("active")
-  $("#menuMobileMyPersonalInfos").removeClass("active")
-  $("#menuMobileMySkills").removeClass("active")
-  $("#menuMobileMyProjects").removeClass("active")
-  $("#menuMobileMyContacts").removeClass("active")
+$("#myContacts").hover(function () {
+  $("#menuDesktopMyPersonalInfos").removeClass("active");
+  $("#menuDesktopMySkills").removeClass("active");
+  $("#menuDesktopMyProjects").removeClass("active");
+  $("#menuDesktopMyContacts").removeClass("active");
+  $("#menuMobileMyPersonalInfos").removeClass("active");
+  $("#menuMobileMySkills").removeClass("active");
+  $("#menuMobileMyProjects").removeClass("active");
+  $("#menuMobileMyContacts").removeClass("active");
   $("#menuMobileMyContacts").addClass("active");
   $("#menuDesktopMyContacts").addClass("active");
 });

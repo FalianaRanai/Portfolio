@@ -1,6 +1,6 @@
 body{
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background: url("../assets/img/Circuit Board.svg");
+    background: url("../assets/img/subtle-prism.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -44,7 +44,7 @@ body{
     text-transform: uppercase !important;
     font-weight: 700 !important;
     letter-spacing: 3px;
-    height: 100vh;
+    min-height: 100vh;
     color: rgb(39, 56, 76) !important;
 }
 
@@ -117,7 +117,9 @@ body{
 #database,
 #framework, 
 #autres{
-    transition: 0.7s; max-height: 0px; overflow: auto;
+    transition: max-height 1s ease; 
+    max-height: 0px; 
+    overflow: hidden;
 }
 
 /* PROJETS */
@@ -184,6 +186,7 @@ body{
     border-radius: 20px;
     transition: 0.5s;
     color: white;
+    max-width: 50vw;
 }
 #CVButton:hover{
     color: rgb(26, 38, 51);
@@ -208,6 +211,7 @@ body{
     width: 4rem;
     height: 4rem;
     z-index: 1000;
+    transition: 0.3s;
   }
 
   #backToTop:hover{
@@ -223,7 +227,7 @@ body{
 
 @media (max-width: 576px) {
     body{
-        background: url("../assets/img/Circuit Board Mobile.svg");
+        background: url("../assets/img/subtle-prism.svg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -233,10 +237,28 @@ body{
     }
 }
 
+#frontEndButton,
+#backEndButton,
+#databaseButton,
+#frameworkButton, 
+#autresButton{
+    /* text-transform: lowercase; */
+    color: white;
+}
+
 #frontEndButton:hover,
 #backEndButton:hover,
 #databaseButton:hover,
 #frameworkButton:hover, 
 #autresButton:hover{
     color: rgb(201, 205, 210);
+}
+
+.accordion-button{
+    max-width: 250px;
+    background: rgb(39, 56, 76) !important;
+    color: white;
+}
+.accordion-button::after {
+    color: white !important; /* Change la couleur de la flèche en blanc */
 }
