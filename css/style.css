@@ -262,3 +262,9 @@ body{
 .accordion-button::after {
     color: white !important; /* Change la couleur de la flèche en blanc */
 }
+
+.carousel-item img.zoom {
+    transform: scale(1.2); /* Ajustez la valeur pour le niveau de zoom */
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
