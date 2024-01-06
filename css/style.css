@@ -74,7 +74,7 @@ body{
     text-transform: uppercase !important;
     font-weight: 700 !important;
     letter-spacing: 3px;
-    min-height: 80vh;
+    min-height: 100vh;
     background: rgb(39, 56, 76) !important;
     color: white;
 }
@@ -146,7 +146,7 @@ body{
     text-transform: uppercase !important;
     font-weight: 700 !important;
     letter-spacing: 3px;
-    min-height: 60vh;
+    min-height: 100vh;
     background: rgb(39, 56, 76) !important;
     color: white;
 }
