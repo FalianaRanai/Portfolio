@@ -640,3 +640,6 @@ $("#myContacts").hover(function () {
   $("#menuMobileMyContacts").addClass("active");
   $("#menuDesktopMyContacts").addClass("active");
 });
+
+
+$("#copyrightYear").html((new Date()).getFullYear());
