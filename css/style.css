@@ -217,7 +217,7 @@ body{
 
 @media (min-width: 768px) {
     .myPersonalInfosDiv{
-      max-width: 50%;
+      /* max-width: 50%; */
     }
 }
 
